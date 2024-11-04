@@ -1,4 +1,4 @@
-{
+[{
         "title": "The Untamed",
         "year": 2019,
         "network": "Tencent Video",
@@ -207,9 +207,7 @@
         "network": "iQiyi",
         "main_cast": ["Xu Kai", "Sandrine Pinna"],
         "genres": ["Fantasy", "Comedy", "Romance"]
-    }
-]
-[
+    },
     {
         "title": "Love Me If You Dare",
         "year": 2015,
@@ -426,9 +424,7 @@
         "network": "iQiyi",
         "main_cast": ["Ju Jingyi", "Alan Yu"],
         "genres": ["Fantasy", "Romance", "Historical"]
-    }
-]
-[
+    },
     {
         "title": "One and Only",
         "year": 2021,
@@ -624,9 +620,7 @@
         "network": "Hunan TV",
         "main_cast": ["Li Yifeng", "Zhao Liying"],
         "genres": ["Fantasy", "Romance"]
-    }
-]
-[
+    },
     {
         "title": "Sweet Dreams",
         "year": 2018,
