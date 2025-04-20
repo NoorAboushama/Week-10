@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Tracery Prologue Generator</title>
-  <script src="https://cdn.jsdelivr.net/npm/tracery-grammar@0.0.0/index.min.js"></script>
+  <title>Fates Intertwined – Tracery Generator</title>
+  <script src="https://cdn.jsdelivr.net/npm/tracery-grammar@1.0.0/tracery.min.js"></script>
   <style>
     body {
       background-color: #f7f1e1;
@@ -18,49 +18,45 @@
       font-size: 16px;
       margin-top: 20px;
       cursor: pointer;
+      background-color: #8b0000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #a80000;
     }
     #output {
       font-style: italic;
       font-size: 1.4em;
       margin-top: 2em;
+      color: #333;
     }
   </style>
 </head>
 <body>
   <h1>Fates Intertwined</h1>
-  <p>Click to reveal a poetic prologue inspired by <em>Romeo and Juliet</em>.</p>
+  <p>Click the button to reveal a poetic prologue inspired by <em>Romeo and Juliet</em>.</p>
   <button onclick="generatePrologue()">Generate Prologue</button>
   <div id="output"></div>
 
   <script>
     const grammar = tracery.createGrammar({
-      "origin": [
-        "#line1# #line2# #line3#"
-      ],
+      "origin": ["#line1# #line2# #line3#"],
       "line1": [
         "Two souls in #setting# meet by chance,",
         "In #setting#, love is born of grief,",
-        "Within the walls of #setting#, hearts collide,"
+        "Within the walls of #setting#, hearts collide,",
+        "Across the bounds of #setting#, they dared to dream,"
       ],
       "line2": [
         "Bound by #emotion#, undone by #force#.",
         "Where #force# rules, even passion fails.",
+        "Their hearts defy the weight of #force#.",
         "Fate twines their lives like threads of silk."
       ],
       "line3": [
         "What light breaks? What doom follows?",
         "From ancient hate springs love anew.",
-        "Their tale is one of stars and sorrow."
-      ],
-      "setting": ["Verona", "a city torn", "feuding houses"],
-      "emotion": ["desire", "longing", "hope", "despair"],
-      "force": ["fate", "honor", "family feud"]
-    });
+        "
 
-    function generatePrologue() {
-      const result = grammar.flatten("#origin#");
-      document.getElementById("output").innerText = result;
-    }
-  </script>
-</body>
-</html>
